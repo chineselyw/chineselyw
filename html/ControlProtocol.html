@@ -41,9 +41,28 @@ Your token: TPC-0-IIOJ-PYQR
 ***初次进入主机方式：通过主机的另一个网口(有DHCP功能)，给你的电脑分配IP，网页地址输入网关的IP就可以配置主机的网口了(administrator/password)。
 ***触屏的出厂密码1988
 
+{给IPad部署界面程序步骤：
+	ipad 软件注册
+	1、厂商给一个IPAD授权码（token）：类似 tpc-14-abcd-nnqc
+	2、使用账户与密码登录TPControl Lisences网站
+	3、点击菜单 MYACCOUNT>TPControl licenses (TPCloud)后，进入http://tpcloud.touchpanelcontrol.com/en/tokens
+	4、点击tokens 选项页，可以看到你账户里的所有的token，点击add token按钮，在Distributor Token*:必选项中添入token后，点击add token按钮，会在tokens增加一条token记录。
+	5、点击刚添加的token记录，会显示 view details等几个选项页，在view details页里点击 create a PIN按钮，会生成一个PIN号
+	6、在Ipad上安装TPControl软件，然后在设置里将左侧边栏接到最下面，点击TPControl，在右侧显示TPControl的选项信息，同样滚动条拉到最底下，打开 TPCloud PIN选项，然后打开TPControl软件，会提示输入PIN号
+	7、输入PIN code后，连网后，点击send按钮，几秒钟提示提示完成信息。在IPad上的TPControl中会看到token中显示类似 tpc-14-abcd-nnqc的信息，TPC Device ID也会有信息显示。
+	8、注册完成。
+	Ipad 软件设置
+	1、manage profile>profile 1中host为中控主机的IP，port：1319，Device ID默认为11001，这个要与netlinx中的定义的Ipad的设备号一致。
+
+}
+
+{ 给AMX 自已品牌的触屏传程序的注意事项：
+	1、在TP4界面编程软件的菜单项 Transfer时点connect菜单项，打开连接设置，新建一个连接设置时，ip 地址一定要指定中控主机的IP（而不是触屏的IP***关键，在这个坑里挣扎过***）
+}
+
 快思聪-------------------------------------------------------
 快思聪技术网站：http://applicationmarket.crestron.com
-
+wanghaibo@shgbit.com whb911108
 
 爱思创-------------------------------------------------------
 Extron编程账号
