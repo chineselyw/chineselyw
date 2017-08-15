@@ -63,6 +63,9 @@ Your token: TPC-0-IIOJ-PYQR
 {AMX编程注意事项
 	1、虚拟触屏设备号必须是32768，如: 32768:1:1
 	2、连接虚拟触屏与真实屏的代码写在函数里，然后在start里调用。
+	3、红外IR接口用作单向Rs232时，首先要在 DEFINE_START 部分加入 send_command device,"'SET MODE DATA'" 命令，其它设置与Rs232设置一样即可。
+	4、send_string 与 send_command一定要区分
+	5、有时在data_event的online里不能改波特率，要加在 DEFINE_START 中就好用了。
 
 }
 快思聪-------------------------------------------------------
