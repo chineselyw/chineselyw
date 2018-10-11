@@ -1,0 +1,54 @@
+某项目用AMX中控控制的这个摄像机，就是用以下这个方法做的。
+
+//---------------------------------
+摄像机的IP控制方式，通过TCP协议方式连接摄像机 端口号为80
+
+（经验：	
+	可以建一个socket连接池，每发起一个动作就启用一个新的socket建立连接，循环使用连接池中的socket，因为一个动作发送的是一个http协议的指令，所以每一个动作执行完成后返回数据后，即会断开。
+）
+
+以下命令通过AMX控制sony SRG-360SHE摄像机测试通过
+------------------------------------------------------------------------------------------------------------------
+摄像机预置位调用
+http://[CAM IP]/command/presetposition.cgi?PresetCall=[PRESET NUMBER（1-254）],[SPEED(1-24)] 
+解释		:		[a()]a是参数，b是参数取值范围;	CAM IP:摄像机IP地址;	PRESET NUMBER为预置号;	SPEED:为调用的速度
+例		：		http://166.111.97.86/command/presetposition.cgi?PresetCall=1,24
+------------------------------------------------------------------------------------------------------------------
+摄像机预置位存储
+http://[CAM IP]/command/presetposition.cgi?PresetSet=[PRESET NUMBER(1-254)],Preset[PRESET NUMBER(1-254)],[on/off]
+解释		:		[a()]a是参数，b是参数取值范围;	CAM IP:摄像机IP地址;	PRESET NUMBER为预置号;	on/off:on或off都可
+例		：		
+------------------------------------------------------------------------------------------------------------------
+摄像机 上，下，左，右
+http://[CAM IP]/command/ptzf.cgi?Move=[ACTION(up,down,left,right)],[SPEED(1-24)],image1
+解释		:		[a()]a是参数，b是参数取值范围;	CAM IP:摄像机IP地址;	ACTION为动作，范围中4选1;	SPEED:动作速度
+例		：		http://192.168.1.22/command/ptzf.cgi?Move=up,12,image1
+------------------------------------------------------------------------------------------------------------------
+摄像机 上，下，左，右的停指令
+http://[CAM IP]/command/ptzf.cgi?Move=stop,motor,Image1
+解释		:		[a]a是参数;	CAM IP:摄像机IP地址;
+例		：		http://166.111.97.86/command/ptzf.cgi?Move=stop,motor,Image1
+------------------------------------------------------------------------------------------------------------------
+摄像机 拉近，拉远
+http://[CAM IP]/command/ptzf.cgi?Move=[ACTION(tele,wide)],[SPEED(0-7)],Image1
+解释		:		[a()]a是参数，b是参数取值范围;	CAM IP:IP地址;	ACTION为动作(拉近，拉远);	SPEED:动作速度
+例		：		http://166.111.97.86/command/ptzf.cgi?Move=tele,5,Image1
+------------------------------------------------------------------------------------------------------------------
+http://[CAM IP]/command/ptzf.cgi?Move=stop,zoom,Image1
+解释		:		[a]a是参数;	CAM IP:摄像机IP地址;
+例		：		http://192.168.1.1/command/ptzf.cgi?Move=stop,zoom,Image1
+------------------------------------------------------------------------------------------------------------------
+摄像机预置位保存 按以下 数据结构 发送
+GET /command/presetposition.cgi?PresetSet=99,Preset99 HTTP/1.1回车换行
+Host:192.168.1.22回车换行
+Authorization: Basic Og==回车换行
+Connection:close回车换行
+回车换行
+回车换行
+------------------------------------------------------------------------------------------------------------------
+摄像机以上提到的其它命令 按以下 数据结构 发送
+GET /command/presetposition.cgi?PresetCall=99,24 HTTP/1.1回车换行
+Host:192.168.1.22回车换行
+Connection:close回车换行
+回车换行
+回车换行

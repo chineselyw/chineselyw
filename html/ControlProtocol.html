@@ -16,7 +16,7 @@
     <H3><a class="equipment" href="protocol-lib/8/index.html">8、NEC电视机 Nec-Monitor_V423_V463(更新时间：2016年12月19日) </a></H3>
     <H3><a class="equipment" href="protocol-lib/9/index.html">9、美视投影幕(更新时间：2017年2月18日) </a></H3>
     <H3><a class="equipment" href="protocol-lib/10/index.html">10、国产VISCA接口摄像机—仿sony摄像机(更新时间：2017年5月5日) </a></H3>
-	<H3>&nbsp;</H3>
+	<H3><a class="equipment" href="protocol-lib/11/index.html">11、sony摄像机RS422接线方式、IP控制协议(更新时间：2018年10月10日) </a></H3>
 	<pre>
 	清立中控bug
 	1、多个串行量要送入1个控制端口（rs232或串口的tx$端）时，必须要全部先进入一个buffer后再送给同一个串量名称后再送给控制端口的tx$,否则会有发不出去指令的问题。
@@ -39,7 +39,7 @@ Thank you for requesting a trial token. iPad 2016.3.12
 Your token: TPC-0-IIOJ-PYQR
 
 ***初次进入主机方式：通过主机的另一个网口(有DHCP功能)，给你的电脑分配IP，网页地址输入网关的IP就可以配置主机的网口了(administrator/password)。
-***触屏的出厂密码1988
+***触屏的出厂密码1988 ；telnet 连接主机：（administrator/password）
 
 {给IPad部署界面程序步骤：
 	ipad 软件注册
@@ -66,12 +66,18 @@ Your token: TPC-0-IIOJ-PYQR
 	3、红外IR接口用作单向Rs232时，首先要在 DEFINE_START 部分加入 send_command device,"'SET MODE DATA'" 命令，其它设置与Rs232设置一样即可。
 	4、send_string 与 send_command一定要区分
 	5、有时在data_event的online里不能改波特率，要加在 DEFINE_START 中就好用了。
+	6、function函数调用时外部的实参会在函数体中被改变。
+	7、时间线尽量在define_start 里面的最前面创建（要不然可能会创建失败，会出现莫名的问题）
 
 }
 快思聪-------------------------------------------------------
 快思聪技术网站：http://applicationmarket.crestron.com
 wanghaibo@shgbit.com whb9（3ge1）08
 chineselyw@.sina.com (###******.******.******)
+
+	    连接DM64*64矩阵Service网口（电脑IP：169.254.254.254/255.255.0.0）,	
+	用Toolbox中的Device Discovery Tool 修改 RMC-Scaler-c 的输出分辨率。	测试好了，以后用远程修改瘦高个
+
 
 爱思创-------------------------------------------------------
 Extron编程账号
@@ -91,6 +97,10 @@ linkLicense / update license
 打400电话或网址提供 linklicense 通过sn号
 中控产品用户名：admin 密：extron
 GUI中按钮名称作为功能标识（取代crestron中的join Number）
+
+//VGA技术革新-------------------------------------------------
+数字时代的VGA-RGBHV（HD-15头）接线方式：
+1红-2绿-3蓝-6红接地-7绿接地-8蓝接地-10行场接地-12DDC-SDA(EDID用,非常重要)-13行-14场-15DDC-SCL(EDID用),非常重要) {使用3+9VGA线材隐蔽敷设}
 
 
 </pre>
