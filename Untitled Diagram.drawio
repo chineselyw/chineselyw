@@ -1,1 +1,115 @@
-<mxfile host="www.draw.io" modified="2020-02-04T00:54:52.716Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="wX3QXfnNmZI7jdsd4YW-" version="12.6.4" type="github"><diagram id="VCMJeSt8Zb4wS6YQNSat" name="Page-1">ddHNEoIgEADgp+EuMKWdzerSyUNnRjZhBl0HabSePh0wY6wTy7cLyw/heTOerejUFSUYwhI5En4kjFGa7adhlqeXlO481FbLULRCqV8QMAn60BL6qNAhGqe7GCtsW6hcZMJaHOKyO5q4aydq2EBZCbPVm5ZOec1YuvoFdK2WznR/8JlGLMXhJr0SEocv4gXhuUV0PmrGHMz8eMu7+HWnP9nPwSy07seCKVj3nibRD/HiDQ==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2020-02-04T01:46:20.286Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="XcNBaO51F6zkwqzzMGWq" version="12.6.4" type="github">
+  <diagram id="VCMJeSt8Zb4wS6YQNSat" name="Page-1">
+    <mxGraphModel dx="678" dy="409" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-3" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="340" y="60" width="120" height="61" as="geometry"/>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-1" value="系统软件主体" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QRuNdLmb7O2Hff4JxLJB-3">
+          <mxGeometry width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="QRuNdLmb7O2Hff4JxLJB-11" target="QRuNdLmb7O2Hff4JxLJB-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="81" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="350" y="140"/>
+              <mxPoint x="400" y="140"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-11" value="数据采集模块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="161" width="20" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-24" value="参数设置模块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="161" width="20" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="QRuNdLmb7O2Hff4JxLJB-19" target="QRuNdLmb7O2Hff4JxLJB-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="140"/>
+              <mxPoint x="400" y="140"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QRuNdLmb7O2Hff4JxLJB-1" target="QRuNdLmb7O2Hff4JxLJB-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="140"/>
+              <mxPoint x="550" y="140"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-19" value="数据处理模块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="161" width="20" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-27" value="控制输出模块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="161" width="20" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="QRuNdLmb7O2Hff4JxLJB-24" target="QRuNdLmb7O2Hff4JxLJB-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="171" as="sourcePoint"/>
+            <mxPoint x="484" y="130" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="250" y="140"/>
+              <mxPoint x="400" y="140"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-29" value="开关灯控制信号" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="301" width="20" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-30" value="窗帘开合控制信号" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="301" width="20" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-31" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;" edge="1" parent="1" source="QRuNdLmb7O2Hff4JxLJB-29" target="QRuNdLmb7O2Hff4JxLJB-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="490" as="sourcePoint"/>
+            <mxPoint x="290" y="440" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="530" y="280"/>
+              <mxPoint x="550" y="280"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-33" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="QRuNdLmb7O2Hff4JxLJB-30" target="QRuNdLmb7O2Hff4JxLJB-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="300" as="sourcePoint"/>
+            <mxPoint x="620" y="250" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="570" y="280"/>
+              <mxPoint x="550" y="280"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-36" value="室外照度数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="301" width="20" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-37" value="室内照度数据信号" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="301" width="20" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-38" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;" edge="1" parent="1" source="QRuNdLmb7O2Hff4JxLJB-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="490" as="sourcePoint"/>
+            <mxPoint x="350" y="261" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="330" y="280"/>
+              <mxPoint x="350" y="280"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-39" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="QRuNdLmb7O2Hff4JxLJB-37" target="QRuNdLmb7O2Hff4JxLJB-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="300" as="sourcePoint"/>
+            <mxPoint x="350" y="261" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="370" y="280"/>
+              <mxPoint x="350" y="280"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
