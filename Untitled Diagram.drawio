@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-04T01:46:20.286Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="XcNBaO51F6zkwqzzMGWq" version="12.6.4" type="github">
+<mxfile host="www.draw.io" modified="2020-02-04T01:53:11.622Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="kqQSVlOueFZHuB-WDVeX" version="12.6.4" type="github">
   <diagram id="VCMJeSt8Zb4wS6YQNSat" name="Page-1">
     <mxGraphModel dx="678" dy="409" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -84,17 +84,20 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="QRuNdLmb7O2Hff4JxLJB-36" value="室外照度数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="301" width="20" height="130" as="geometry"/>
+          <mxGeometry x="340" y="301" width="20" height="130" as="geometry"/>
         </mxCell>
-        <mxCell id="QRuNdLmb7O2Hff4JxLJB-37" value="室内照度数据信号" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="301" width="20" height="130" as="geometry"/>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-40" value="占位感应数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="301" width="20" height="130" as="geometry"/>
         </mxCell>
-        <mxCell id="QRuNdLmb7O2Hff4JxLJB-38" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;" edge="1" parent="1" source="QRuNdLmb7O2Hff4JxLJB-36">
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-37" value="室内照度数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="301" width="20" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-38" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;" edge="1" parent="1" source="QRuNdLmb7O2Hff4JxLJB-40">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="40" y="490" as="sourcePoint"/>
             <mxPoint x="350" y="261" as="targetPoint"/>
             <Array as="points">
-              <mxPoint x="330" y="280"/>
+              <mxPoint x="310" y="280"/>
               <mxPoint x="350" y="280"/>
             </Array>
           </mxGeometry>
@@ -104,9 +107,15 @@
             <mxPoint x="370" y="300" as="sourcePoint"/>
             <mxPoint x="350" y="261" as="targetPoint"/>
             <Array as="points">
-              <mxPoint x="370" y="280"/>
+              <mxPoint x="390" y="280"/>
               <mxPoint x="350" y="280"/>
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QRuNdLmb7O2Hff4JxLJB-43" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="QRuNdLmb7O2Hff4JxLJB-36" target="QRuNdLmb7O2Hff4JxLJB-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="500" as="sourcePoint"/>
+            <mxPoint x="290" y="450" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
       </root>
